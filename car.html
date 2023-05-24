@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
+        <style>
+            .carGame{
+                width: 100%;
+                height: 100vh;
+                background-image: url('assets/bg.png');
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+            
+            }
+            .myCar{
+                width: 50px;
+                height: 90px;
+                /* background: red; */
+                position: absolute;
+                bottom: 120px;
+                background-image: url('assets/car2.png');
+                background-repeat: no-repeat;
+                background-size: 100% 100%;   
+            }
+            .enemyCar{
+                width: 30px;
+                height: 60px;
+                /* background: red; */
+                position: absolute;
+                bottom: 120px;
+                background-image: url('assets/car4.png');
+                /* border-radius: 15px; */
+                background-repeat: no-repeat;
+                background-size: 100% 100%;   
+            }
+            .lines{
+    width: 10px;
+    height: 100px;
+    background: white;
+    position: absolute;
+    margin-left: 195px;   
+}
+        </style>
+    </head>
+    <body>
+        <div class="carGame">
+            <div class="score"></div>
+            <div class="startScreen">
+                <p>
+                    press here to start <br>
+                    Arrow key to move <br>
+                    if you hit another car you will lose.
+                </p>
+            </div>
+            <div class="gameArea">  </div>
+        </div>
+        <script src="car.js"></script>
+    </body>
+</html>
